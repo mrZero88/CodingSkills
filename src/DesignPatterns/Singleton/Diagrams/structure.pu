@@ -1,0 +1,12 @@
+@startuml Structure
+!theme black-knight
+object Director
+object Builder
+object ConcreteBuilder
+object Product
+
+Director o- Builder
+Builder <|- ConcreteBuilder
+ConcreteBuilder .> Product
+
+@enduml
