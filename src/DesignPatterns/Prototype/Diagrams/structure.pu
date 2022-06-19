@@ -1,12 +1,8 @@
 @startuml Structure
 !theme black-knight
-object Director
-object Builder
-object ConcreteBuilder
-object Product
+object Prototype
+object ConcretePrototype
 
-Director o- Builder
-Builder <|- ConcreteBuilder
-ConcreteBuilder .> Product
+Prototype <|-- ConcretePrototype
 
 @enduml

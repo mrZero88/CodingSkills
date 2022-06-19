@@ -1,44 +1,10 @@
 @startuml Class
 !theme black-knight
-class Director {
-    +Director()
-    +construct(Builder):void
-}
-interface Builder {
-    +startUpOperations():void
-    +buildBody():void
-    +insertWheels():void
-    +endOperations():void
-    +getVehicle():Product
-}
-class Product {
-    +Product()
-    +add(String):void
-    +showProduct():void
-}
-class Car {
-    +Car(String)
-    +startUpOperations():void
-    +buildBody():void
-    +insertWheels():void
-    +addHeadlights():void
-    +endOperations():void
-    +getVehicle():void
-}
-class Motorcycle {
-    +Motorcycle(String)
-    +startUpOperations():void
-    +buildBody():void
-    +insertWheels():void
-    +addHeadlights():void
-    +endOperations():void
-    +getVehicle():void
+class Captain {
+    -Captain()
+    +getCaptain():Captain
 }
 
-Director -l-> Builder
-Car -u-|> Builder
-Motorcycle -d-|> Builder
-Car -u-> Product
-Motorcycle -d-> Product
+Captain -> Captain
 
 @enduml

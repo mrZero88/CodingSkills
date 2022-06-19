@@ -1,44 +1,27 @@
 @startuml Class
 !theme black-knight
-class Director {
-    +Director()
-    +construct(Builder):void
-}
-interface Builder {
-    +startUpOperations():void
-    +buildBody():void
-    +insertWheels():void
-    +endOperations():void
-    +getVehicle():Product
-}
-class Product {
-    +Product()
-    +add(String):void
-    +showProduct():void
-}
-class Car {
-    +Car(String)
-    +startUpOperations():void
-    +buildBody():void
-    +insertWheels():void
-    +addHeadlights():void
-    +endOperations():void
-    +getVehicle():void
-}
-class Motorcycle {
-    +Motorcycle(String)
-    +startUpOperations():void
-    +buildBody():void
-    +insertWheels():void
-    +addHeadlights():void
-    +endOperations():void
-    +getVehicle():void
+abstract class BasicCar {
+    -modelName:String
+    -basePrice:Int
+    -onRoadPrice:Int
+    +BasicCar()
+    +getModelName():String
+    +setModelName(String):void
+    +setAdditionalPrice():int
+    +clone():BasicCar
 }
 
-Director -l-> Builder
-Car -u-|> Builder
-Motorcycle -d-|> Builder
-Car -u-> Product
-Motorcycle -d-> Product
+class Nano {
+    +Nano(String)
+    +clone():BasicCar
+}
+
+class Ford {
+    +Ford(String)
+    +clone():BasicCar
+}
+
+BasicCar <|-- Nano
+BasicCar <|-- Ford
 
 @enduml
