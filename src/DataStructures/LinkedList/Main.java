@@ -3,7 +3,7 @@ package DataStructures.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        LinkedList<Integer> ll = new LinkedList<>(10);
+        LinkedList<Integer> ll = new LinkedList<Integer>(10);
         System.out.println(ll.isEmpty());
         System.out.println(ll.size());
         ll.insert(20);

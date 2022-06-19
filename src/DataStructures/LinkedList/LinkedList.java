@@ -3,8 +3,12 @@ package DataStructures.LinkedList;
 public class LinkedList<T> {
     private Node<T> head;
 
-    public LinkedList(T data) {
-        this.head = new Node<T>(data);
+    public LinkedList() {
+        this.head = new Node<T>();
+    }
+
+    public LinkedList(T value) {
+        this.head = new Node<T>(value);
     }
 
     /***
