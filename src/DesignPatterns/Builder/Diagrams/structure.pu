@@ -1,5 +1,5 @@
 @startuml Structure
-!theme black-knight
+!theme metal
 object Director
 object Builder
 object ConcreteBuilder

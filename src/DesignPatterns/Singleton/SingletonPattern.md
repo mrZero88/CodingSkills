@@ -23,5 +23,9 @@ These are the key characteristics in the following implementation. The construct
 
 ![Class](/out/src/DesignPatterns/Singleton/Diagrams/class/Class.png)
 
+## Discussion
+
+I have shown you a simple example to illustrate the concept of the singleton pattern. Let’s review the notable characteristics with the following approach. The constructor is private, so you cannot instantiate the Singleton class(Captain) outside. It helps us to refer the only instance that can exist in the system, and at the same time, you restrict the additional object creation of the Captain class. The private constructor also ensures that the Captain class cannot be extended. So, subclasses cannot misuse the concept. I used the “synchronized” keyword. So, multiple threads cannot involve in the instantiation process at the same time. I am forcing each thread to wait its turn to get the method, so thread- safety is ensured. But synchronization is a costly operation and once the instance is created, it is an additional overhead. (I’ll discuss some alternative methods in the upcoming sections, but each of them has its own pros and cons).
+
 ## Book Reference
 Sarcar, Vaskaran. Java Design Patterns (pp. 35-36). Apress. Edição do Kindle.

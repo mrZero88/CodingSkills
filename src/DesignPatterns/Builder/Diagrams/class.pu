@@ -1,5 +1,5 @@
 @startuml Class
-!theme black-knight
+!theme metal
 class Director {
     +Director()
     +construct(Builder):void

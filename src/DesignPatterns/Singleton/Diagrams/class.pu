@@ -1,5 +1,5 @@
 @startuml Class
-!theme black-knight
+!theme metal
 class Captain {
     -Captain()
     +getCaptain():Captain
