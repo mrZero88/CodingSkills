@@ -4,8 +4,7 @@ public class Main {
 
     /*
      * Separate the construction of a complex object from its representation so that
-     * the same construction processes
-     * can create different representations.
+     * the same construction processes can create different representations.
      */
     public static void main(String[] args) {
         System.out.println("*** Builder Patttern Demo");
