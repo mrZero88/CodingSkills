@@ -2,9 +2,14 @@ package DesignPatterns.Prototype;
 
 public class Main {
 
-    /*
+    /**
+     * GoF Definition:
+     * 
      * Specify the kinds of objects to create using a prototypical instance, and
      * create new objects by copying this prototype.
+     * 
+     * @param args
+     * @throws CloneNotSupportedException
      */
     public static void main(String[] args) throws CloneNotSupportedException {
 
@@ -18,14 +23,14 @@ public class Main {
 
         BasicCar bc1;
 
-        //Nano
+        // Nano
 
         bc1 = nano.clone();
         bc1.onRoadPrice = nano.basePrice = nano.basePrice + BasicCar.setAddiitionalPrice();
 
         System.out.println("Car is " + bc1.modelName + " and it's price is " + bc1.onRoadPrice);
 
-        //Ford
+        // Ford
 
         bc1 = ford.clone();
         bc1.onRoadPrice = ford.basePrice = ford.basePrice + BasicCar.setAddiitionalPrice();

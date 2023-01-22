@@ -2,9 +2,13 @@ package DesignPatterns.Builder;
 
 public class Main {
 
-    /*
+    /**
+     * GoF Definition:
+     * 
      * Separate the construction of a complex object from its representation so that
      * the same construction processes can create different representations.
+     * 
+     * @param args
      */
     public static void main(String[] args) {
         System.out.println("*** Builder Patttern Demo");
