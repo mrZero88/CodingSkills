@@ -11,6 +11,17 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        // TODO: Do Decorator pattern here.
+        
+        ConcreteComponent withoutDecorator = new ConcreteComponent();
+        withoutDecorator.makeHouse();
+
+        FloorDecorator floorDecorator = new FloorDecorator();
+        floorDecorator.setComponent(withoutDecorator);
+        floorDecorator.makeHouse();
+
+        PaintDecorator paintDecorator = new PaintDecorator();
+        paintDecorator.setComponent(floorDecorator);
+        paintDecorator.makeHouse();
+
     }
 }
