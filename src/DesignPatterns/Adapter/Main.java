@@ -11,6 +11,6 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        // TODO:
+        // TODO: Do the adapter pattern here.
     }
 }
