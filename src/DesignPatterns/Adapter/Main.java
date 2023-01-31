@@ -11,6 +11,8 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        // TODO: Do the adapter pattern here.
+        CalculatorAdapter calculatorAdapter = new CalculatorAdapter();
+        Triangle triangle = new Triangle(20, 10);
+        System.out.println(calculatorAdapter.getArea(triangle));
     }
 }
